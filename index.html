@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Ropero</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="barra-lateral">
+        <h2>Agregar/Editar Prenda</h2>
+        <form id="formulario-prendas">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            <label for="tipo">Tipo:</label>
+            <input type="text" id="tipo" name="tipo" required><br><br>
+            <label for="temporada">Temporada:</label>
+            <input type="text" id="temporada" name="temporada" required><br><br>
+            <label for="marca">Marca:</label>
+            <input type="text" id="marca" name="marca" required><br><br>
+            <button type="submit">Guardar</button>
+        </form>
+    </div>
+    <div id="principal">
+        <h2>Mi Ropero</h2>
+        <label for="filtro-tipo">Filtrar por tipo:</label>
+        <select id="filtro-tipo">
+            <option value="">Todos</option>
+        </select>
+        <div id="resumen">
+            <h3>Resumen</h3>
+            <p>Total de prendas: <span id="total-contador">0</span></p>
+            <p>Prendas por tipo: <span id="tipo-contador">0</span></p>
+            <p>Prendas por temporada: <span id="temporada-contador">0</span></p>
+            <p>Prendas por marca: <span id="marca-contador">0</span></p>
+        </div>
+        <div id="lista-prendas">
+            <h3>Lista de Prendas</h3>
+            <ul id="lista">
+            </ul>
+        </div>
+    </div>
+    <script src="obli.js"></script>
+</body>
+</html>
+
+

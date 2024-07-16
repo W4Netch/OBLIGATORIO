@@ -1,0 +1,87 @@
+/* styles.css */
+
+/* Estilos básicos para la estructura */
+body {
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar {
+    width: 300px;
+    padding: 10px;
+    border-right: 1px solid #080000;
+    background-color: #d41010;
+}
+
+#main {
+    flex: 1;
+    padding: 10px;
+}
+
+#clothes-list {
+    margin-top: 20px;
+}
+
+h2, h3 {
+    margin: 0 0 10px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #000500;
+    color: rgb(255, 0, 0);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #e40000;
+    background-color: #0a0000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button.edit, button.delete {
+    background-color: #2196F3;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+button.delete {
+    background-color: #f44336;
+}
+
+button.edit:hover {
+    background-color: #0b7dda;
+}
+
+button.delete:hover {
+    background-color: #da190b;
+}
